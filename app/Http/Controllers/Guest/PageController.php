@@ -13,7 +13,7 @@ class PageController extends Controller
         $trains = Train::all();
 
         // @dd($trains);
-        
+        $trains = Train::where('departure_date', '>=', '2024-04-10')->get();
         
         return view('home', compact('trains'));
     }
