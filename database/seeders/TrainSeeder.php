@@ -28,6 +28,7 @@ class TrainSeeder extends Seeder
            $newTrain->carriage = $faker->randomDigitNotNull();
            $newTrain->on_schedule = $faker->boolean();
            $newTrain->cancelled = $faker->boolean();
+           $newTrain->departure_date = $faker->dateTimeBetween('-1 week', '+1 week');
 
            $newTrain->save();
         }

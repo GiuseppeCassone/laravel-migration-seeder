@@ -11,6 +11,8 @@
 
     <div class="container">
         <h1>ciao</h1>
+
+        @yield('content')
     </div>
     
 </body>
